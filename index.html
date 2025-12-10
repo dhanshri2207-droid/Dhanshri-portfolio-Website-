@@ -1,0 +1,361 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+<style>
+body {
+    background: linear-gradient(140deg, #6a11cb, #2575fc, #00c6ff, #0072ff);
+    background-size: 350% 350%;
+    animation: animateBG 15s infinite;
+}
+
+@keyframes animateBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+
+
+
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+nav{
+background-color:#333;
+padding:10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    overflow:hidden;
+}
+
+nav ul li {
+    float:left;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background:#555;
+    border-radius:5px;
+}
+
+   
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+   
+
+    
+.header {
+    background-image: url("image.wepg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); /* overlay */
+}
+.header h1 {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.intro{
+        background:white;
+        width:80%;
+        margin:20px auto;
+        padding:20px;
+        text-align:center;
+        border-radius:10px;
+        box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .intro img{
+        width:120px;
+        border-radius:50%;
+        border:3px solid #4a90e2;
+    }
+.btn{
+        background:#4a90e2;
+        color:white;
+        padding:12px 25px;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        text-decoration:none;
+        font-size:16px;
+    }
+    .btn:hover{
+        background:#1c70c1;
+    }
+.hero {
+  background: #1abc9c;
+  color: white;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  background: #fff;
+  color: #1abc9c;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover {
+  background: #16a085;
+  color: white;
+}
+
+/* Section Headings */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.left-container {
+ background:#262525;
+}
+.right-container{
+   background:#3877FF;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1f242d;
+    flex-direction: column;
+    gap: 64px;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, .4);
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #262c37;
+    padding: 10px 30px;
+    transition: .5s;
+    transition-delay: .8s;
+}
+
+a:hover {
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    text-shadow: 0 0 5px var(--clr);
+    transition-delay: 1ms;
+}
+
+a span {
+    position: absolute;
+    display: block;
+    background: var(--clr);
+    box-shadow: 0 0 5px var(--clr);
+}
+
+a span:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+a:hover span:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+a span:nth-child(2) {
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+a:hover span:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+a span:nth-child(3) {
+    right: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform .5s;
+    transition-delay: .4s;
+}
+
+a:hover span:nth-child(3) {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+a span:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform .5s;
+    transition-delay: .4s;
+}
+
+a:hover span:nth-child(4) {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+a span:nth-child(5) {
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .8s;
+}
+
+a:hover span:nth-child(5) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+a span:nth-child(6) {
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .8s;
+}
+
+a:hover span:nth-child(6) {
+    transform: scaleX(1);
+    transform-origin: right;
+
+footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:10px;
+            margin-top:20px;
+        }
+
+  
+</style>
+  
+
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                 <li><a href="skills.html">Skills</a></li>
+                <li><a href="qualification.html">Qualification</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+   
+<section class="intro" id="intro">
+<img src="image.jpg"  width="300">
+     <h2>Hello, I'm Dhanshri Bhombe</h2>
+    <p>I am a passionate learner and beginner web designer. I love building clean and interactive web pages using HTML, CSS, and creativity.</p>
+    <a href="resume D.pdf" download class="btn">Download Resume</a>
+</section>
+
+<div class="left container"></div>
+
+<div class="Right container"></div>
+
+
+    
+<footer>
+    &copy; 2025 My Website | Designed with Internal CSS
+</footer>
+</body>
+</html>

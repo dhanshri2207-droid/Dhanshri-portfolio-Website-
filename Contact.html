@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+<style>
+
+body {
+  background: linear-gradient(-45deg, #6c63ff, #a29bfe, #d0d1ff, #c3f0ff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+/* ===== Contact Page Section ===== */
+.contact-section {
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+  background: #f9f9ff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+/* Section Heading */
+.contact-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input & Textarea Fields */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d3d3ff;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* Textarea Styling */
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button */
+.contact-form button {
+    padding: 14px 25px;
+    border: none;
+    border-radius: 40px;
+    background: #6c63ff;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(108, 99, 255, 0.2);
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    background: #4e48c9;
+    transform: translateY(-3px);
+}
+
+/* Optional: Info / Contact Details Box */
+.contact-info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-info div i {
+    color: #6c63ff;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .contact-section {
+        width: 90%;
+        padding: 25px;
+    }
+}
+</style>
+    
+</head>
+<body>
+
+<section class="contact-section">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form" onsubmit="return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <div><i class="fas fa-phone"></i> +91 94203029XY</div>
+        <div><i class="fas fa-envelope"></i> dhanshri2207@email.com</div>
+        <div><i class="fas fa-map-marker-alt"></i> Kopargoan,Maharastra</div>
+    </div>
+</section>
+
+
+</body>
+</html>
